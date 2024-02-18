@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home{
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+#projetos{
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projeto {
+    background-color: #0c0d32;
+    margin: 10px;
+    width: calc(22% - -20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; /* Adicionado para garantir espaço abaixo do botão */
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.projeto-imagem {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.projeto h3 {
+    text-align: center;
+    color: #ffffff;
+    padding: 0px;
+}
+
+.projeto p {
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 10px; /* Alterado de margin: 10px; para margin-top: 10px; */
+    background-color: #ad1005;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.projeto a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .projeto {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+}
