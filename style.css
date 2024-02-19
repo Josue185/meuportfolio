@@ -33,6 +33,35 @@ header {
     text-align: center;
 }
 
+.home-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre a foto e o texto */
+    padding: 20px; /* Espaço interno para não tocar as bordas da seção */
+}
+
+.minha-foto {
+    max-width: 200px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 10px; /* Arredondamento sutil */
+    object-fit: cover; /* Garante que a foto cubra o espaço designado */
+}
+
+.home-texto h1, .home-texto p {
+    text-align:justify; /* Alinha o texto à esquerda para legibilidade */
+    max-width: 550px;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column; /* Muda a direção do flex para coluna em telas menores */
+    }
+    .home-texto h1, .home-texto p {
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+}
+
 section {
     padding: 20px;
 }
